@@ -1,0 +1,157 @@
+.testimonials {
+  padding: 120px 0;
+  background: white;
+}
+
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 50px;
+}
+
+.testimonial-header .section-title {
+  margin-top: 15px;
+}
+
+.testimonial-header .section-title span {
+  color: var(--accent);
+}
+
+.testimonial-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.testimonial-controls button {
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  background: white;
+  color: var(--primary);
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  transition: 0.3s ease;
+}
+
+.testimonial-controls button:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.testimonial-box {
+  position: relative;
+
+  padding: 70px 80px;
+
+  border-radius: 25px;
+  background: var(--background-soft);
+
+  overflow: hidden;
+}
+
+.quote-mark {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+
+  color: var(--accent);
+  opacity: 0.25;
+
+  font-family: Georgia, serif;
+  font-size: 150px;
+  line-height: 1;
+}
+
+.testimonial-box blockquote {
+  position: relative;
+  max-width: 850px;
+
+  color: var(--primary);
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(25px, 3vw, 38px);
+  line-height: 1.4;
+}
+
+.testimonial-person {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-top: 40px;
+}
+
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+  color: white;
+
+  font-weight: 700;
+}
+
+.testimonial-person div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.testimonial-person strong {
+  color: var(--primary);
+}
+
+.testimonial-person span {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.testimonial-count {
+  position: absolute;
+  right: 50px;
+  bottom: 35px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.testimonial-count div {
+  width: 60px;
+  height: 1px;
+  background: #c8d0d7;
+}
+
+@media (max-width: 650px) {
+  .testimonial-header {
+    align-items: start;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .testimonial-box {
+    padding: 50px 25px 80px;
+  }
+
+  .quote-mark {
+    right: 10px;
+  }
+
+  .testimonial-count {
+    right: 25px;
+  }
+}
